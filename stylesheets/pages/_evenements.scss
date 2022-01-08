@@ -1,78 +1,61 @@
-
 .header {
-      font-family: 'Source Sans Pro', sans-serif;
-      background-color: #e0485d;
-      color: #322885;
-}/* simplement mis pour les couleurs et la font*/
-
-
-
-
-
-*/ 
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #e0485d;
+  color: #322885;
+} /* simplement mis pour les couleurs et la font*/
 
 .tout-les-articles {
-      
-      background-color: #fcec00;
-      
-      
-      h2 {
-            font-family: 'Permanent Marker', cursive;
-            color: #4caa2b;
-            text-align: center;
-            margin: 5vw;
-            padding: 1vw;
-            font-size: 300%;
+  background-color: #fcec00;
 
+  h2 {
+    font-family: "Permanent Marker", cursive;
+    color: #4caa2b;
+    text-align: center;
+    margin: 5vw;
+    padding: 1vw;
+    font-size: 300%;
+  }
+
+  .chaque-article {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    padding: 1vw;
+    background: #aecf80;
+    display: flex;
+    justify-self: auto;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 40vw;
+      height: 100%;
+      padding: 1vw;
+    }
+
+    .alignement-vertical-texte-article {
+      display: block;
+      padding: 5vw;
+      width: 50vw;
+
+      h3 {
+        font-family: "Yellowtail", cursive;
+        color: #4caa2b;
+        text-align: center;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        font-size: 200%;
       }
 
-      
-
-
-      .chaque-article {
-            margin-left: 10vw;
-            margin-right: 10vw;
-            margin-top: 2vw;
-            margin-bottom: 5vw;
-            padding: 1vw;
-            background: #aecf80;
-            display: flex;
-            justify-self: auto;
-            align-items: center;
-
-            img {
-                  display: block;
-                  width: 40vw;
-                  height: 100%;
-                  padding: 1vw;
-            }
-
-            
-
-            .alignement-vertical-texte-article {
-                  display: block;
-                  padding: 5vw;
-                  width: 50vw;
-            
-                  h3 {
-                        font-family: 'Yellowtail', cursive;
-                        color: #4caa2b;
-                        text-align: center;
-                        margin-left: 0vw;
-                        margin-right: 0vw;
-                        font-size: 200%
-                        
-                  }
-
-                  p {
-                        font-family: 'Pacifico', cursive;  
-                        color: #4caa2b;
-                        text-align: start;
-                        margin-left: 0vw;
-                        margin-right: 0vw;
-                        font-size: 150%   
-                  }
-            }
-
+      p {
+        font-family: "Pacifico", cursive;
+        color: #4caa2b;
+        text-align: start;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        font-size: 150%;
       }
+    }
+  }
 }
