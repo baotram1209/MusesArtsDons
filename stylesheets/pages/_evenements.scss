@@ -1,61 +1,67 @@
-.header {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #e0485d;
-  color: #322885;
-} /* simplement mis pour les couleurs et la font*/
+// config couleur et texte du main
 
 .tout-les-articles {
-  background-color: #fcec00;
-
+  margin: 0;
+  padding: 1.5vw;
+  background-color: $body-color;
   h2 {
-    font-family: "Permanent Marker", cursive;
-    color: #4caa2b;
-    text-align: center;
-    margin: 5vw;
-    padding: 1vw;
-    font-size: 300%;
-  }
-
-  .chaque-article {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 2vw;
-    margin-bottom: 5vw;
-    padding: 1vw;
-    background: #aecf80;
-    display: flex;
-    justify-self: auto;
-    align-items: center;
-
-    img {
-      display: block;
-      width: 40vw;
-      height: 100%;
-      padding: 1vw;
-    }
-
-    .alignement-vertical-texte-article {
-      display: block;
-      padding: 5vw;
-      width: 50vw;
-
-      h3 {
-        font-family: "Yellowtail", cursive;
-        color: #4caa2b;
+        font-family: 'Permanent Marker', cursive;
+        color: $body-text-color;
         text-align: center;
-        margin-left: 0vw;
-        margin-right: 0vw;
-        font-size: 200%;
-      }
+        margin: 0;
+        padding: 0;
+        font-size: calc(1rem + 3vw) ;
 
-      p {
-        font-family: "Pacifico", cursive;
-        color: #4caa2b;
-        text-align: start;
-        margin-left: 0vw;
-        margin-right: 0vw;
-        font-size: 150%;
-      }
-    }
   }
 }
+// affichage et backround de chaque article      
+.chaque-article {
+  max-width: 1800px;
+  background: $article-bg-color;
+}
+// config du texte pour qu'il soit au meme niveau            
+.alignement-vertical-texte-article {
+  display: block;
+}
+// config du titre d'un article            
+.alignement-vertical-texte-article,h3 {
+  font-family: 'Yellowtail', cursive;
+  color: $article-bg-color;
+  text-align: center;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  font-size: calc(0.75rem + 2vw) ;                        
+}
+// config du texte d'un article
+.alignement-vertical-texte-article,p {
+  font-family: 'Pacifico', cursive;  
+  color: $body-text-color;
+  text-align: start;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  padding: 5vw;
+  
+  font-size: calc(0.75rem + 1vw) ;
+}
+
+// version responsive de chaque article
+@media screen and (min-width:900px) {
+  .chaque-article {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+        padding: 1vw;
+        display: flex;
+        justify-self: auto;
+        align-items: center;
+  }
+        
+  .alignement-vertical-texte-article {
+        width: 50vw;
+  }
+}
+
+
+  
+
