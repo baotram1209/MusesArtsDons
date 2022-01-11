@@ -16,18 +16,21 @@
 
 
 // 4. Layout-related sections
-
-
+@import
+// 'layout/header',
+'layout/header2';
 
 // 5. Components
 @import
 'components/images',
-'components/buttons';
+'components/buttons',
+'components/flex';
 
 // 6. Page-specific styles
 @import
-'pages/example',
-'pages/evenements';
+// 'pages/example',
+'pages/evenements',
+'pages/index';
 
 // 7. Themes
 
