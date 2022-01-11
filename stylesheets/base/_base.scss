@@ -2,6 +2,7 @@
 // font-size: 100%;
 // box-sizing: border-box;
 // }
+<<<<<<< Updated upstream
 
 *,
 *::before,
@@ -26,6 +27,34 @@ li {
   list-style: none;
 }
 
+=======
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*============ Original ============*/
+/*body {
+  background-color: $body-color;
+  color: $body-text-color;
+  font-family: $h2-font;
+}*/
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+>>>>>>> Stashed changes
 h1,
 h2,
 h3 {
