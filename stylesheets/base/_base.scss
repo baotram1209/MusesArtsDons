@@ -2,9 +2,7 @@
 // font-size: 100%;
 // box-sizing: border-box;
 // }
-<<<<<<< Updated upstream
-
-*,
+//<<<<<<< Updated upstream *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -12,9 +10,17 @@
   padding: 0;
 }
 
-body {
-  background-color: $body-color;
-  color: $body-text-color;
+html {
+  background: linear-gradient(
+    $color-navy,
+    $color-yellow,
+    $color-green-light,
+    $color-pink
+  );
+}
+
+li {
+  list-style: none;
 }
 
 a,
@@ -27,38 +33,12 @@ li {
   list-style: none;
 }
 
-=======
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/*============ Original ============*/
-/*body {
-  background-color: $body-color;
-  color: $body-text-color;
-  font-family: $h2-font;
-}*/
-
-a,
-a:visited,
-a:hover {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
->>>>>>> Stashed changes
+/*
 h1,
 h2,
 h3 {
 }
+*/
 
 img {
   max-width: 100%;
