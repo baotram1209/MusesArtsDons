@@ -1,9 +1,4 @@
-// html {
-// font-size: 100%;
-// box-sizing: border-box;
-// }
 
-*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -11,11 +6,20 @@
   padding: 0;
 }
 
+
 body {
-  background-color: $body-color;
-  color: $body-text-color;
-  overflow-x: hidden; //to hide if the hidden menu is overflow
+  overflow-x: hidden; 
+}//to hide if the hidden menu is overflow
+
+html {
+ background: linear-gradient(
+    $color-navy,
+    $color-yellow,
+    $color-green-light,
+    $color-pink
+  );
 }
+
 
 a,
 a:visited,
