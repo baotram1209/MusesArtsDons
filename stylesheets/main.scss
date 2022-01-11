@@ -6,14 +6,30 @@
 // 2. Vendors
 
 // 3. Base stuff
-@import "base/base", "base/fonts";
+@import "base/base", 
+  "base/fonts";
 
 // 4. Layout-related sections
 
+@import
+// 'layout/header',
+'layout/header2';
+
 // 5. Components
-@import "components/images", "components/buttons";
+@import
+'components/images',
+'components/buttons',
+'components/flex';
 
 // 6. Page-specific styles
-@import "pages/example", "pages/evenements", "pages/contact";
+@import
+'pages/evenements',
+'pages/contact',
+'pages/index';
+
+
+
+
+
 
 // 7. Themes

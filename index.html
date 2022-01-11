@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <link rel="stylesheet" href="stylesheets/main.css" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Place favicon.ico in the root directory -->
 
-    <meta name="theme-color" content="#fafafa" />
-  </head>
+  <link rel="stylesheet" href="stylesheets/main.css" />
 
-  <body>
-    <!-- Add your site or application content here -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
 
-    <header class="header">
-      <h1 class="header__title">MusesArtsDons</h1>
-      <a href="/">
-        <figure class="header__logo"><img src="#" alt="logo" /></figure>
-      </a>
+<body>
+  <!-- Add your site or application content here -->
 
-      <ul class="nav__list hide-for-mobile">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="evenements.html">Événements</a></li>
-        <li><a href="contact.html"> A propos Contact</a></li>
+  <!-- <header class="header">
+    <nav>
+
+    <h1 class="header__title header_item-1">MusesArtsDons</h1>
+
+    <figure class="header__logo header_item-2"><img src="img/musesartsdons-logo.jpg" alt="logo" /></figure>
+    <ul class="nav-list header_item-3">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="evenements.html">Événements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    </nav>
+  </header> -->
+
+  <!-- Redo from tuto -->
+
+  <header class="primary-header header_item-1">
+    <h1>MusesArtsDons</h1>
+    <figure class="header_item-2">
+      <img class="logo" src="img/musesartsdons-logo.jpg" alt="logo" />
+    </figure>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <!-- aria -control to say the button control the ul with id=primary-control -->
+      <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
+      <span></span>
+    </button>
+   
+    <nav class="header_item-3">
+      <ul id="primary-navigation flex" data-visible="false" class="primary-navigation flex">
+        <li class="active">
+          <a href="index.html">
+            Accueil
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            Événements
+          </a>
+        </li>
+        <li>
+          <a href="evenements.html">
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
+
   </header>
+
 
   <main>
 
-    <section class="hero">
-      <figure><img src="#" alt="#">
-      </figure>
-      <h1>Musical</h1>
-      <figure><img src="#" alt="#">
-      </figure>
-      <h1>Danse</h1>
-    </section>
 
-    <section class="feature">
-      <h1>Derniers événement</h1>
-      <figure>
-        <img src="#" alt="#">
-      </figure>
-    </section>
+    <figure class="main__1 feature-image-1"><img src="img/concert.jpg" alt="concert">
+    </figure>
+    <h1 class="main__2 feature-text-1">Musical</h1>
+    <figure class="main__3 feature-image-2"><img src="img/girl-group-dancing.jpg" alt="girl-group-dancing">
+    </figure>
+    <h1 class="main__4 feature-text-2">Danse</h1>
 
-    <section class="subfeature">
-      <h2>Présentation de l'association</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque dolor, natus reprehenderit nulla
-        fuga quia cupiditate. Officia expedita possimus quo eum sint aspernatur tempora eaque ratione non blanditiis.
-        Omnis!
-      </p>
-    </section>
+
+    <h1 class="main__5">DERNIERS EVENEMENTS</h1>
+    <figure class="main__6">
+      <img src="img/guitar-at-night.jpg" alt="guitar-at-night">
+    </figure>
+
+
+    <h1 class="main__7">PRESENTATION DE L'ASSOCIATION</h1>
+    <p class="main__8 main__a-propos">
+      Association à but non lucratif, Muses Arts Dons vous propose d’accéder à la culture en général, à la musique ou à
+      la danse en particulier, sous forme d’échanges et de dons (livres, jouets, vêtements…) redistribués à d’autres
+      associations caritatives favorisant les familles et enfants dans le besoin. Venez découvrir la musique, la danse,
+      la peinture avec Muses Arts Dons où l’Art devient un vecteur social.
+    </p>
+
 
   </main>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
