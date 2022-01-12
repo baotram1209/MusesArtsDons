@@ -8,21 +8,18 @@
 .tout-les-articles {
   margin: 0;
   padding: 1.5vw;
-  background-color: $body-color;
   h2 {
-        font-family: 'Permanent Marker', cursive;
-        color: $body-text-color;
+        // font-family: 'Permanent Marker', cursive; defined in _font.scss
         text-align: center;
         margin: 0;
         padding: 0;
         font-size: calc(1rem + 3vw) ;
-
   }
 }
 // affichage et backround de chaque article      
 .chaque-article {
   max-width: 1800px;
-  background: $article-bg-color;
+  background: $background-text;
 }
 // config du texte pour qu'il soit au meme niveau            
 .alignement-vertical-texte-article {
@@ -30,8 +27,8 @@
 }
 // config du titre d'un article            
 .alignement-vertical-texte-article,h3 {
-  font-family: 'Yellowtail', cursive;
-  color: $article-bg-color;
+  // font-family: 'Yellowtail', cursive; defined in _font.scss
+  color: $quaternary-color;
   text-align: center;
   margin-left: 0vw;
   margin-right: 0vw;
@@ -40,7 +37,6 @@
 // config du texte d'un article
 .alignement-vertical-texte-article,p {
   font-family: 'Pacifico', cursive;  
-  color: $body-text-color;
   text-align: start;
   margin-left: 0vw;
   margin-right: 0vw;

@@ -44,13 +44,14 @@
         a {
         display: inline-block;
         font-size: $font-med;
+        color: $quaternary-color;
         padding: 0.4rem;
-        border: 0.2rem solid $nav-text-color; 
+        border: 0.2rem solid $tertiary-color; 
         border-radius: 10px;
         
       
         &:hover{
-            color: $body-color;
+            color: $primary-color;
         }
         }
 .nav-list {

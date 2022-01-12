@@ -10,10 +10,9 @@ main {
     padding: 1rem;
 }
 .main__a-propos {
-    max-width: 60vw;
+    max-width: 80vw;
     margin: auto;
-    background-color: $article-bg-color;
-    padding: 2rem;
+    background-color: $background-text;
 }
 @for $i from 1 through 8 {
     .main__#{$i} {
