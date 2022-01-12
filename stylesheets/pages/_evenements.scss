@@ -40,7 +40,7 @@
   text-align: start;
   margin-left: 0vw;
   margin-right: 0vw;
-  padding: 5vw;
+  padding: 0vw;
   
   font-size: calc(0.75rem + 1vw) ;
 }
@@ -48,8 +48,8 @@
 // version responsive de chaque article
 @media screen and (min-width:900px) {
   .chaque-article {
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: 2vw;
+        margin-right: 5vw;
         margin-top: 2vw;
         margin-bottom: 5vw;
         padding: 1vw;
@@ -59,7 +59,9 @@
   }
         
   .alignement-vertical-texte-article {
-        width: 50vw;
+        width: 70vw;
+        margin-left: 2vw;
+        margin-right: 1vw;
   }
 }
 
