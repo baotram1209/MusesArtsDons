@@ -8,32 +8,22 @@
 }*/
 
 /*============ SAMPLE  ==============*/
-body {
-  font-family: $body-font;
-  font-weight: 300;
-  font-style: italic;
-  color: #fff;
-}
-.a-propos__title,
-.contact__title {
-  font-family: $title-font;
-}
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+// .a-propos__title,
+// .contact__title {
+//   font-family: $title-font;
+// } //defined in _font.scss
 
-h2,
-p {
-  padding: 0.3em 0;
-}
 
-section,
-footer {
-  padding: 0 1.5em;
-}
+// h2,
+// p {
+//   padding: 0.3em 0;
+// } /defined in base
+
+// section,
+// footer {
+//   padding: 0 1.5em;
+// }
 
 /*========== A Propos  ==============*/
 #section-a {
@@ -49,12 +39,12 @@ footer {
     }
     &__icon {
       a {
-        color: #fff;
+        color: $primary-color;
       }
       i {
         padding: 0 0 0 0.5em;
         &:hover {
-          color: $color-navy;
+          color: $tertiary-color;
           transition: all 0.3s;
         }
       }
@@ -64,6 +54,7 @@ footer {
 
 /*========== Footer  ==============*/
 .footer {
+  padding: 0 1.5em;
   text-align: center;
   a {
     text-decoration: underline;
@@ -72,7 +63,7 @@ footer {
     padding-left: 0.3em;
     &:hover {
       cursor: pointer;
-      color: $color-navy;
+      color: $tertiary-color;
       transition: all 0.3s;
     }
   }

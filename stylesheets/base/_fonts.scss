@@ -1,7 +1,23 @@
-$font-sm: 0.6rem;
+$font-sm: 1rem;
 $font-med: 1.3rem; 
 $font-large: 2rem;
 
+body {
+    color: $quaternary-color;
+    font-weight: 300;
+    font-style: italic;
+}
+h1, h2 {
+    font-family: $title-font;
+   
+}
 h1 {
     font-size: $font-large;
 }
+h2 {
+    font-size: $font-med;
+}
+p {
+    font-size: $font-sm;
+}
+

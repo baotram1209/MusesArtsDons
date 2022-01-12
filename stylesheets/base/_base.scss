@@ -9,15 +9,16 @@
 
 body {
   overflow-x: hidden; 
+  
 }//to hide if the hidden menu is overflow
 
 html {
  background: linear-gradient(
-    $color-navy,
-    $color-yellow,
-    $color-green-light,
-    $color-pink
-  );
+  $secondary-color,
+  $primary-color,
+  $quinary-color,
+  $tertiary-color
+);
 }
 
 
@@ -33,11 +34,15 @@ li {
 
 
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-h1, h2, h3 {
+// img {
+//   max-width: 100%;
+//   height: auto;
+// } There is already img in _imgage.scss
+
+h1, h2, h3, p {
   display: block;
-  padding: 0;
+  padding: 0.3em 0; //top and bottom are 0.3em, left and right are 0
+}
+section {
+  padding: 0 1.5em;
 }
