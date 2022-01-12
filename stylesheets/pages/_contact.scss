@@ -51,6 +51,17 @@
     }
   }
 }
+/*========== Go-up toggle  ==============*/
+.go-up {
+  margin: 1em 1.5em 2em;
+  font-size: 1.2em;
+  justify-content: right;
+  text-align: right;
+  &:hover {
+    cursor: pointer;
+    color: $color-navy;
+  }
+}
 
 /*========== Footer  ==============*/
 .footer {

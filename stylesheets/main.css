@@ -258,6 +258,21 @@ figure {
   transition: all 0.3s;
 }
 
+/*========== Go-up toggle  ==============*/
+.go-up {
+  margin: 1em 1.5em 2em;
+  font-size: 1.2em;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+}
+
+.go-up:hover {
+  cursor: pointer;
+  color: #322885;
+}
+
 /*========== Footer  ==============*/
 .footer {
   padding: 0 1.5em;
