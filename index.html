@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>MusesArtsDons</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -17,65 +17,130 @@
 
     <link rel="stylesheet" href="stylesheets/main.css" />
 
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <script src="/js/main.js" defer></script>
+
     <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <!-- Add your site or application content here -->
+    <!--========== HEADER ========-->
 
-    <header class="header">
-      <h1 class="header__title">MusesArtsDons</h1>
-      <a href="/">
-        <figure class="header__logo"><img src="#" alt="logo" /></figure>
-      </a>
-
-      <ul class="nav__list hide-for-mobile">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="evenements.html">Événements</a></li>
-        <li><a href="contact.html"> A propos Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <figure><img src="#" alt="#">
+    <header class="primary-header">
+     <article class="logo-group header_item-1">
+      <figure class="logo-figure">
+        <img class="logo" src="img/logo.png" alt="logo" />
       </figure>
-      <h1>Musical</h1>
-      <figure><img src="#" alt="#">
-      </figure>
-      <h1>Danse</h1>
-    </section>
+      <h1>MusesArtsDons</h1>
+     </article>
+      
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <!-- aria -control to say the button control the ul with id=primary-control -->
+        <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
+        <span></span>
+      </button>
 
-    <section class="feature">
-      <h1>Derniers événement</h1>
-      <figure>
-        <img src="#" alt="#">
-      </figure>
-    </section>
+      <nav class="header_item-2">
+        <ul
+          id="primary-navigation flex"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="active">
+            <a href="index.html"> Accueil </a>
+          </li>
+          <li>
+            <a href="evenements.html"> Évènements </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="subfeature">
-      <h2>Présentation de l'association</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque dolor, natus reprehenderit nulla
-        fuga quia cupiditate. Officia expedita possimus quo eum sint aspernatur tempora eaque ratione non blanditiis.
-        Omnis!
+     <!--========== MAIN ========-->
+    <main class="index">
+      <figure class="main__1 feature-image-1">
+        <img src="img/concert.jpg" alt="concert" />
+      </figure>
+      <h1 class="main__2 feature-text-1">Musical</h1>
+      <figure class="main__3 feature-image-2">
+        <img src="img/girl-group-dancing.jpg" alt="girl-group-dancing" />
+      </figure>
+      <h1 class="main__4 feature-text-2">Danse</h1>
+
+      <h1 class="main__5">DERNIERS EVENEMENTS</h1>
+      <figure class="main__6">
+        <img src="img/guitar-at-night.jpg" alt="guitar-at-night" />
+      </figure>
+
+      <h1 class="main__7">PRESENTATION DE L'ASSOCIATION</h1>
+      <p class="main__8 main__a-propos">
+        Association à but non lucratif, Muses Arts Dons vous propose d’accéder à
+        la culture en général, à la musique ou à la danse en particulier, sous
+        forme d’échanges et de dons (livres, jouets, vêtements…) redistribués à
+        d’autres associations caritatives favorisant les familles et enfants
+        dans le besoin. Venez découvrir la musique, la danse, la peinture avec
+        Muses Arts Dons où l’Art devient un vecteur social.
       </p>
-    </section>
+    </main>
+    <!--========== GO UP TOGGLE ========-->
+    <div class="go-up">
+      <i class="far fa-arrow-alt-circle-up" id="go-up"></i>
+    </div>
+    <!--========== FOOTER ========-->
+    <footer class="footer">
+      <ul>
+        <div class="footer__title">
+          <li>
+            <a href="/index.html">MusesArtsDons</a>
+          </li>
+          <li>
+            <p calss="footer__copyright">
+              copyright ©2022 MusesArtsDons | All rights reserved
+            </p>
+          </li>
+        </div>
+        <div class="footer__icons">
+          <li><p>5 rue d'arts, 59100, Roubaix</p></li>
+          <li class="footer__icons">
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+          </li>
+        </div>
+      </ul>
+    </footer>
 
-  </main>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>

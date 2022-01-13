@@ -1,0 +1,50 @@
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  background: #2b6855;
+
+  ul {
+    color: #fff;
+    .footer__title {
+      padding-top: 1em;
+    }
+    .footer__icons {
+      padding-bottom: 1em;
+      &-list i {
+        padding-left: 0.7em;
+        &:hover {
+          cursor: pointer;
+          //color: $tertiary-color;
+          opacity: 50%;
+          transition: all 0.3s;
+        }
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    .footer {
+      display: grid;
+      grid-template-rows: 1fr;
+      font-size: 1rem;
+      ul {
+        margin: 0 3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+      }
+      &__title {
+        text-align: start;
+      }
+      &__icons {
+        text-align: end;
+        padding-right: 3em;
+      }
+    }
+  }
+}

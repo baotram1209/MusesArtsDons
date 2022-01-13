@@ -1,0 +1,36 @@
+.index {
+    display: grid;
+    grid-gap: 1rem;
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    }
+    .main__a-propos {
+      margin: auto;
+      background-color: $background-text;
+    }
+
+// Responsive, from tablet up, use this grid
+@include breakpoint-up(medium) {
+  .index {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr auto auto 5fr auto auto;
+    grid-template-areas:
+      "main__1 main__3"
+      "main__2 main__4"
+      "main__5 main__5"
+      "main__6 main__6"
+      "main__7 main__7"
+      "main__8 main__8";
+    justify-items: center;
+    align-items: center;
+  }
+  @for $i from 1 through 8 {
+    .main__#{$i} {
+      grid-area: main__#{$i};
+    }
+  }
+  .main__a-propos {
+    max-width: 50vw;
+}
+}

@@ -1,0 +1,63 @@
+/*========== A Propos  ==============*/
+#section-a {
+  padding-bottom: 2em;
+}
+
+/*========== Contact  ==============*/
+.contact {
+  .card {
+    &__content {
+      text-align: center;
+      padding: 0em 0 1em 0;
+      .card__name {
+        &-position {
+          font-size: 0.8em;
+          color: #747474;
+        }
+      }
+    }
+    &__icon {
+      a {
+        color: $primary-color;
+      }
+      i {
+        padding: 0 0 0 0.5em;
+        &:hover {
+          color: $tertiary-color;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+/*========== Go-up toggle  ==============*/
+.go-up {
+  margin: 1em 1.5em 2em;
+  font-size: 1.2em;
+  justify-content: right;
+  text-align: right;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #section-a {
+    margin: 0 3em;
+    padding: 0;
+  }
+  .contact {
+    padding: 3em 3em;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(auto, 100%));
+      column-gap: 1em;
+      .card {
+        justify-content: space-between;
+        &__content {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

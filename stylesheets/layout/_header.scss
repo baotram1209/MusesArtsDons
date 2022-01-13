@@ -1,0 +1,97 @@
+.primary-header {
+    // align-items: center;
+    background-color: transparent; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h1 {
+        color: $primary-color;
+    }
+    .header_item-1, .primary-navigation {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .primary-navigation {
+        padding-right: 1rem;
+    }
+}
+
+nav {
+    
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+   }
+
+.mobile-nav-toggle {
+    display: none;
+}
+.logo {
+    max-height: 5rem;
+     }
+
+nav a {
+padding: 0.3rem;
+font-size: $font-med;
+color: $primary-color;
+border: 0.2rem solid $primary-color; 
+border-radius: 10px;
+
+&:hover{
+    color: $quinary-color;
+    border: 0.2rem solid $quinary-color; 
+}
+
+}
+     //RESPONSIVE FOR MOBILE
+@include breakpoint-down(medium){
+    .primary-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        h1 {
+            display: none;
+        }
+    }
+
+  
+    .primary-navigation {
+        gap: 4em;
+        position: fixed;
+        inset: 0 0 0 50%; //shorthand for top right bottom left (When position is set to absolute or fixed, the top property specifies the distance between the element's outer margin of top edge and the inner border of the top edge of its containing block.) 
+        flex-direction: column;
+        padding: #{"min(30vh, 10rem)"} 2em; // need to put in #{} so it works in sass, min takes the minimum of the 2, so when the screen is shorter, it doesn't take 10rem, but 30vh
+        background-color: $secondary-light;
+        transform: translateX(100%); // to make the menu hidden before clicking burger
+        transition: transform 350ms ease-out;
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url("../../img/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        border: 0;
+        top: 1rem;
+        right: 1rem;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url("../../img/icon-close.svg");
+    }
+}
+
+

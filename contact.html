@@ -1,105 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>MusesArtsDons-Contact</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="stylesheets/main.css" />
+
+    <!-- Fontawesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="stylesheets/main.css" />
 
-    <title>MusesArtsDons - Contact</title>
+    <script src="/js/main.js" defer></script>
+
+    <meta name="theme-color" content="#fafafa" />
   </head>
+
   <body>
-    <main>
-      <!-- A Propos -->
-      <section id="section-a">
-        <h2 class="a-propos__title">A propos</h2>
-        <article id="a-propos" class="grid">
-          <figure>
-            <img src="" alt="a propos" />
-          </figure>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
-            possimus dolorum deleniti quia quis exercitationem et ipsa modi,
-            suscipit quo eaque deserunt quos ea impedit soluta reiciendis
-            doloribus, facilis cum obcaecati quisquam? Ab, id beatae doloremque
-            adipisci iure dolore magnam!
-          </p>
-        </article>
+    <!--========== HEADER ========-->
+
+    <header class="primary-header">
+     <article class="logo-group header_item-1">
+      <figure class="logo-figure">
+        <img class="logo" src="img/logo.png" alt="logo" />
+      </figure>
+      <h1>MusesArtsDons</h1>
+     </article>
+      
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <!-- aria -control to say the button control the ul with id=primary-control -->
+        <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
+        <span></span>
+      </button>
+
+      <nav class="header_item-2">
+        <ul
+          id="primary-navigation flex"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="active">
+            <a href="index.html"> Accueil </a>
+          </li>
+          <li>
+            <a href="evenements.html"> Évènements </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_contact">
+      <!--========== Contact ========-->
+      <section class="contact">
+        <h2 class="contact__title">Contactez-nous</h2>
+            <div class="grid">
+              <div class="card">
+                  <img src="img/edwige-della-valle.png" alt="" class="card-image"/>
+                <div class="card__content">
+                  <h3 class="card__name">Edwige Della Valle <span class="card__name-position">Presidente</span></h3>
+                  <span class="card__icon">
+                    <a href="mailto:edwige-lille@hotmail.fr" target="_blank""><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </span>
+                </div>
+              </div>
+              <div class="card">
+                  <img src="img/pierre-jelocha.png" alt="" class="card-image"/>
+                <div class="card__content">
+                  <h3 class="card__name">Pierre JELOCHA <span class="card__name-position">Trésorier</span></h3>
+                  <span class="card__icon">
+                    <a href="mailto:jelocha.pierre@bbox.fr" target="_blank""><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </span>
+                </div>
+              </div>
+              <div class="card">
+                  <img src="img/laurent-dewaele.png" alt="" class="card-image"/>
+                <div class="card__content">
+                  <h3 class="card__name">Laurent DEWAELE <span class="card__name-position">Secrétaire</span></h3>
+                  <span class="card__icon">
+                    <a href="mailto:laurentdewaele59@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
-      <!-- Contact -->
-      <section class="section-b">
-        <h2 class="contact__title">Contact-nous</h2>
-        <article id="contact__content" class="grid">
-          <ul>
-            <li>
-              <div class="card">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <div class="card__content">
-                  <h3 class="contact__name">name</h3>
-                  <span>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-facebook-square"></i>
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <div class="card__content">
-                  <h3 class="contact__name">name</h3>
-                  <span>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-facebook-square"></i>
-                  </span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <figure>
-                  <img src="" alt="" />
-                </figure>
-                <div class="card__content">
-                  <h3 class="contact__name">name</h3>
-                  <span>
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-facebook-square"></i>
-                  </span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </article>
+      <!--========== A Propos ========-->
+      <section id="section-a">
+        <div class="content-wrap">
+          <h2 class="a-propos__title">A propos</h2>
+          <article id="a-propos">
+              <img src="img/pexels-cottonbro-7974879.jpg" alt="a propos" />
+            <div class="content-text">
+              <p>
+                Association à but non lucratif, Muses Arts Dons vous propose d’accéder à la culture en général, à la musique ou à la danse en particulier, sous forme d’échanges et de dons (livres, jouets, vêtements…) redistribués à d’autres associations caritatives favorisant les familles et enfants dans le besoin. Venez découvrir la musique, la danse, la peinture avec Muses Arts Dons où l’Art devient un vecteur social.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
+    <!--========== SCROLL TOGGLE ========-->
+    <div class="go-up"><i class="far fa-arrow-alt-circle-up" id="go-up"></i></div>
+      <!--========== FOOTER ========-->
+    <footer class="footer">
       <ul>
-        <li>
-          <p class="footer__logo">MusesArtsDons</p>
-        </li>
-        <li>
-          <p calss="footer__copyright">
-            copyright ©2022 MusesArtsDons | All rights reserved
-          </p>
-        </li>
-        <li>5 rue d'arts, 59100, Roubaix</li>
-        <li class="footer__icons">
-          <i class="fas fa-envelope"></i>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
-        </li>
+        <div class="footer__title">
+          <li>
+            <a href="/index.html">MusesArtsDons</a>
+          </li>
+          <li>
+            <p calss="footer__copyright">
+              copyright ©2022 MusesArtsDons | All rights reserved
+            </p>
+          </li>
+        </div>
+        <div class="footer__icons">
+          <li><p>5 rue d'arts, 59100, Roubaix</p></li>
+          <li class="footer__icons-list">
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+          </li>
+        </div>
       </ul>
     </footer>
+    <script src="js/nav.js"></script>
+
   </body>
 </html>

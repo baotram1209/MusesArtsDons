@@ -1,26 +1,42 @@
-html {
-font-size: 100%;
-box-sizing: border-box;
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-*, *::before, *::after{
-    box-sizing: inherit;
-    }
 
 body {
-    margin: 0;
-    padding: 0;
-   
+  overflow-x: hidden;
+} //to hide if the hidden menu is overflow
+
+html {
+  background: linear-gradient(
+    $secondary-color,
+    $primary-color,
+    $quinary-color,
+    $tertiary-color
+  );
 }
 
-a, a:visited, a:hover {
-    text-decoration: none ;
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-h1, h2, h3 {
-    margin: 0
+
+h1,
+h2,
+h3,
+p, figure {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 0 1.5em;
 }
