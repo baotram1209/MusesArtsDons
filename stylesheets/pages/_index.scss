@@ -1,5 +1,5 @@
-
 main {
+<<<<<<< HEAD
     display: grid;
     grid-gap: 1rem;
     max-width: 80vw;
@@ -17,26 +17,50 @@ main {
 //     }
 // }
 
-// Responsive, from tablet up, use this grid
-@include breakpoint-up(medium) {
-    main {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:  3fr auto auto 5fr auto auto;
-    grid-template-areas:
-    "main__1 main__3"
-    "main__2 main__4"
-    "main__5 main__5"
-    "main__6 main__6"
-    "main__7 main__7"
-    "main__8 main__8";
-    justify-items: center;
-    align-items: center;
+=======
+  display: grid;
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+
+.feature-image-1,
+.feature-image-2 {
+  padding: 1rem;
+}
+.main__a-propos {
+  max-width: 80vw;
+  margin: auto;
+  background-color: $background-text;
 }
 @for $i from 1 through 8 {
-    .main__#{$i} {
-    grid-area: main__#{$i};  
-    }
+  .main__#{$i} {
+    padding-bottom: 1rem;
+  }
 }
+>>>>>>> bc387b7b546fd6775c69c4a0ef444560a0293064
+// Responsive, from tablet up, use this grid
+@include breakpoint-up(medium) {
+  .index {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr auto auto 5fr auto auto;
+    grid-template-areas:
+      "main__1 main__3"
+      "main__2 main__4"
+      "main__5 main__5"
+      "main__6 main__6"
+      "main__7 main__7"
+      "main__8 main__8";
+    justify-items: center;
+    align-items: center;
+  }
+  @for $i from 1 through 8 {
+    .main__#{$i} {
+      grid-area: main__#{$i};
+    }
+  }
+}
+<<<<<<< HEAD
 }
 
 .main__a-propos {
@@ -44,3 +68,5 @@ main {
     margin: auto;
     background-color: $background-text;
 }
+=======
+>>>>>>> bc387b7b546fd6775c69c4a0ef444560a0293064
