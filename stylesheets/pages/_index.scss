@@ -1,24 +1,22 @@
 
 main {
     display: grid;
+    grid-gap: 1rem;
     max-width: 80vw;
     margin: auto;
     text-align: center;
     }
 
-.feature-image-1, .feature-image-2{
-    padding: 1rem;
-}
-.main__a-propos {
-    max-width: 80vw;
-    margin: auto;
-    background-color: $background-text;
-}
-@for $i from 1 through 8 {
-    .main__#{$i} {
-    padding-bottom: 1rem;
-    }
-}
+// .feature-image-1, .feature-image-2{
+//     gap: 1rem;
+// }
+
+// @for $i from 1 through 8 {
+//     .main__#{$i} {
+//     padding-bottom: 1rem;
+//     }
+// }
+
 // Responsive, from tablet up, use this grid
 @include breakpoint-up(medium) {
     main {
@@ -39,4 +37,10 @@ main {
     grid-area: main__#{$i};  
     }
 }
+}
+
+.main__a-propos {
+    max-width: 80vw;
+    margin: auto;
+    background-color: $background-text;
 }
