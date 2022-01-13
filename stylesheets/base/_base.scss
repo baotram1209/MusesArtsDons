@@ -28,17 +28,14 @@ li {
   list-style: none;
 }
 
-// img {
-//   max-width: 100%;
-//   height: auto;
-// } There is already img in _imgage.scss
 
 h1,
 h2,
 h3,
-p {
+p, figure {
   display: block;
-  padding: 0.3em 0; //top and bottom are 0.3em, left and right are 0
+  padding: 0;
+  margin: 0;
 }
 section {
   padding: 0 1.5em;
