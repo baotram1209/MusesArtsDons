@@ -17,61 +17,73 @@
     <title>MusesArtsDons - Contact</title>
   </head>
   <body>
-    <!--========== NAV ========-->
+    <!--========== HEADER ========-->
 
-    <main>
-      <!--========== A Propos ========-->
-      <section id="section-a">
-        <div class="content-wrap">
-          <h2 class="a-propos__title">A propos</h2>
-          <article id="a-propos">
-            <figure>
-              <img src="img/pexels-cottonbro-7974879.jpg" alt="a propos" />
-            </figure>
-            <div class="content-text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                similique porro recusandae aperiam. Culpa veritatis pariatur
-                iure quae, laborum atque aperiam. Quos eos id odit ducimus
-                temporibus accusamus fuga tenetur rerum error suscipit molestiae
-                fugiat quia possimus veniam enim illo accusantium pariatur,
-                tempora sapiente. Voluptate nam quibusdam aperiam nihil
-                deleniti.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
+    <header class="primary-header header_item-1">
+      <h1>MusesArtsDons</h1>
+      <figure class="header_item-2">
+        <img class="logo" src="img/logo.png" alt="logo" />
+      </figure>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <!-- aria -control to say the button control the ul with id=primary-control -->
+        <!-- aria-expanded to set: the menu is not expanded until you click on the burger to change aria-expanded to 'true'-->
+        <span></span>
+      </button>
+
+      <nav class="header_item-3">
+        <ul
+          id="primary-navigation flex"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="active">
+            <a href="index.html"> Accueil </a>
+          </li>
+          <li>
+            <a href="evenements.html"> Événements </a>
+          </li>
+          <li>
+            <a href="contact.html"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_contact">
       <!--========== Contact ========-->
       <section class="contact">
         <h2 class="contact__title">Contactez-nous</h2>
             <div class="grid">
               <div class="card">
-                  <img src="img/profile-sample.jpg" alt="" class="card-image"/>
+                  <img src="img/edwige-della-valle.png" alt="" class="card-image"/>
                 <div class="card__content">
-                  <h3 class="card__name">name</h3>
+                  <h3 class="card__name">Edwige Della Valle <span class="card__name-position">Presidente</span></h3>
                   <span class="card__icon">
-                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:edwige-lille@hotmail.fr" target="_blank""><i class="fas fa-envelope"></i></a>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                   </span>
                 </div>
               </div>
               <div class="card">
-                  <img src="img/profile-sample.jpg" alt="" class="card-image"/>
+                  <img src="img/pierre-jelocha.png" alt="" class="card-image"/>
                 <div class="card__content">
-                  <h3 class="card__name">name</h3>
+                  <h3 class="card__name">Pierre JELOCHA <span class="card__name-position">Trésorier</span></h3>
                   <span class="card__icon">
-                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:jelocha.pierre@bbox.fr" target="_blank""><i class="fas fa-envelope"></i></a>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                   </span>
                 </div>
               </div>
               <div class="card">
-                  <img src="img/profile-sample.jpg" alt="" class="card-image"/>
+                  <img src="img/laurent-dewaele.png" alt="" class="card-image"/>
                 <div class="card__content">
-                  <h3 class="card__name">name</h3>
+                  <h3 class="card__name">Laurent DEWAELE <span class="card__name-position">Secrétaire</span></h3>
                   <span class="card__icon">
-                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:laurentdewaele59@gmail.com"><i class="fas fa-envelope"></i></a>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                   </span>
                 </div>
@@ -80,11 +92,25 @@
           </article>
         </div>
       </section>
-      <!--========== GO UP TOGGLE ========-->
-      <div class="go-up"><i class="far fa-arrow-alt-circle-up" id="go-up"></i></div>
+      <!--========== A Propos ========-->
+      <section id="section-a">
+        <div class="content-wrap">
+          <h2 class="a-propos__title">A propos</h2>
+          <article id="a-propos">
+              <img src="img/pexels-cottonbro-7974879.jpg" alt="a propos" />
+            <div class="content-text">
+              <p>
+                Association à but non lucratif, Muses Arts Dons vous propose d’accéder à la culture en général, à la musique ou à la danse en particulier, sous forme d’échanges et de dons (livres, jouets, vêtements…) redistribués à d’autres associations caritatives favorisant les familles et enfants dans le besoin. Venez découvrir la musique, la danse, la peinture avec Muses Arts Dons où l’Art devient un vecteur social.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
-    <!--========== FOOTER ========-->
-    <footer class="footer">
+    <!--========== SCROLL TOGGLE ========-->
+    <div class="go-up"><i class="far fa-arrow-alt-circle-up" id="go-up"></i></div>
+      <!--========== FOOTER ========-->
+      <footer class="footer">
       <ul>
         <div class="footer__title">
           <li>
