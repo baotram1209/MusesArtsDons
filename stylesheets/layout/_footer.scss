@@ -1,0 +1,40 @@
+.footer {
+  padding: 0 1.5em;
+  text-align: center;
+  font-size: 1rem;
+  a {
+    text-decoration: underline;
+  }
+  &__icons i {
+    padding-left: 0.3em;
+    &:hover {
+      cursor: pointer;
+      //color: $tertiary-color;
+      opacity: 50%;
+      transition: all 0.3s;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .footer {
+    margin: 0 3em;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: 3em;
+    font-size: 1rem;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+    }
+    &__title {
+      text-align: start;
+    }
+    &__icons {
+      text-align: end;
+    }
+  }
+}
