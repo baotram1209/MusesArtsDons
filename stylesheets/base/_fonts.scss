@@ -1,6 +1,12 @@
-$font-sm: 1.1rem;
-$font-med: 1.3rem;
-$font-large: 2rem;
+$font-sm: 1.5rem;
+$font-med: 1.8rem;
+$font-large: 2.5rem;
+
+@include breakpoint-up(large) {
+$font-sm: 2rem;
+$font-med: 2.5rem;
+$font-large: 4rem;
+}
 
 body {
   color: $quaternary-color;

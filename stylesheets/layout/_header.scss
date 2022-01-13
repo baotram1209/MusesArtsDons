@@ -57,7 +57,7 @@ border-radius: 10px;
 
 }
      //RESPONSIVE FOR MOBILE
-@include breakpoint-down(small){
+@include breakpoint-down(medium){
     .primary-header {
         display: flex;
         flex-direction: column;

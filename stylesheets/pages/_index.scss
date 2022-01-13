@@ -1,44 +1,15 @@
-main {
-<<<<<<< HEAD
+.index {
     display: grid;
     grid-gap: 1rem;
     max-width: 80vw;
     margin: auto;
     text-align: center;
     }
+    .main__a-propos {
+      margin: auto;
+      background-color: $background-text;
+    }
 
-// .feature-image-1, .feature-image-2{
-//     gap: 1rem;
-// }
-
-// @for $i from 1 through 8 {
-//     .main__#{$i} {
-//     padding-bottom: 1rem;
-//     }
-// }
-
-=======
-  display: grid;
-  max-width: 80vw;
-  margin: auto;
-  text-align: center;
-}
-
-.feature-image-1,
-.feature-image-2 {
-  padding: 1rem;
-}
-.main__a-propos {
-  max-width: 80vw;
-  margin: auto;
-  background-color: $background-text;
-}
-@for $i from 1 through 8 {
-  .main__#{$i} {
-    padding-bottom: 1rem;
-  }
-}
->>>>>>> bc387b7b546fd6775c69c4a0ef444560a0293064
 // Responsive, from tablet up, use this grid
 @include breakpoint-up(medium) {
   .index {
@@ -59,14 +30,7 @@ main {
       grid-area: main__#{$i};
     }
   }
+  .main__a-propos {
+    max-width: 50vw;
 }
-<<<<<<< HEAD
 }
-
-.main__a-propos {
-    max-width: 80vw;
-    margin: auto;
-    background-color: $background-text;
-}
-=======
->>>>>>> bc387b7b546fd6775c69c4a0ef444560a0293064
