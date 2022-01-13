@@ -185,38 +185,49 @@ nav a:hover {
 }
 
 .footer {
-  padding: 0 1.5em;
   text-align: center;
   font-size: 1rem;
+  background: #2b6855;
 }
 
-.footer a {
-  text-decoration: underline;
+.footer ul {
+  color: #fff;
 }
 
-.footer__icons i {
-  padding-left: 0.3em;
+.footer ul .footer__title {
+  padding-top: 1em;
 }
 
-.footer__icons i:hover {
+.footer ul .footer__icons {
+  padding-bottom: 1em;
+}
+
+.footer ul .footer__icons-list i {
+  padding-left: 0.7em;
+}
+
+.footer ul .footer__icons-list i:hover {
   cursor: pointer;
   opacity: 50%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
+.footer ul a {
+  text-decoration: underline;
+  color: #fff;
+}
+
 @media only screen and (min-width: 700px) {
-  .footer {
-    margin: 0 3em;
-    padding: 0;
+  .footer .footer {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    padding-top: 3em;
     font-size: 1rem;
   }
-  .footer ul {
+  .footer .footer ul {
+    margin: 0 3em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -228,10 +239,10 @@ nav a:hover {
             align-items: center;
     padding: 0;
   }
-  .footer__title {
+  .footer .footer__title {
     text-align: start;
   }
-  .footer__icons {
+  .footer .footer__icons {
     text-align: end;
   }
 }
