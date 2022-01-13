@@ -148,6 +148,9 @@ nav a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .primary-header h1 {
+    display: none;
+  }
   .header_item-1, .header_item-2 {
     margin-bottom: 1rem;
   }
